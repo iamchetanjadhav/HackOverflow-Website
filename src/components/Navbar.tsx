@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 
 const navLinks = [
-  { id: "home", label: "Home" },
+  { id: "hero", label: "Home" },
   { id: "gallery", label: "Gallery" },
   { id: "stats", label: "Statistics" },
   { id: "schedule", label: "Schedule" },
@@ -13,14 +13,14 @@ const navLinks = [
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  const [activeSection, setActiveSection] = useState("hero");
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      let current = "home";
+      let current = "hero";
       navLinks.forEach((link) => {
         const el = document.getElementById(link.id);
         if (!el) return;
@@ -207,9 +207,9 @@ const Navbar = () => {
 
       <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
         <div className="navbar-container">
-          <div className="logo" onClick={() => scrollTo("home")}>
+          <div className="logo" onClick={() => scrollTo("hero")}>
             <img
-              src="/images/Logo.png"
+              src="/images/HO 4.0 Logo.svg"
               alt="HackOverflow Logo"
               className="logo-image"
             />

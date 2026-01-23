@@ -41,9 +41,9 @@ const DateCards = () => {
     },
     {
       id: 2,
-      date: "Jan 25, 2026",
+      date: "Jan 30, 2026",
       month: "JAN",
-      day: "25",
+      day: "30",
       title: "Registration Ends",
       desc: "Last day to submit your team details",
       color: "#E85D24"

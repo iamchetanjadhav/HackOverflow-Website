@@ -18,7 +18,9 @@ export default function Home() {
   return (
     <>
       {/* HERO */}
-      <Hero />
+      <section id="hero">
+        <Hero />
+      </section>
 
       {/* SPECIAL */}
       <Special />

@@ -51,7 +51,7 @@ export default function Hero() {
         return () => window.removeEventListener("resize", resize);
     }, []);
 
-    /* ---------------- SCROLL MORPH ---------------- */
+
     useEffect(() => {
         const onScroll = () => {
             const scrolled = window.scrollY;
@@ -84,7 +84,7 @@ export default function Hero() {
 
                 {/* TAGLINE */}
                 <p className="hero-tagline">
-                    A 36-hour sprint of innovation, code, and collaboration.
+                    A 36 hour sprint of innovation, code, and collaboration.
                 </p>
 
                 {/* CTA */}
